@@ -1,0 +1,223 @@
+/*Style Sheet*/
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navul {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    background-color: whitesmoke;
+    border-top: 3px solid blue;
+    border-bottom: 1px solid lightgray;
+    margin: 0;
+}
+
+nav li {
+    flex: 1;
+    list-style: none;
+    padding: 15px;
+    margin-inline: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-family: "Optima";
+    font-weight: 100;
+    font-size: larger;
+    position: fixed;
+}
+
+.hover:hover {
+    color: blueviolet;
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+section {
+    flex-grow: 1;
+    min-height: inherit;
+    box-sizing: border-box;
+}
+
+img {
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+    overflow: hidden;
+    max-width: 200px;
+    margin: 0 auto 20px;
+}
+
+p, table {
+    font-family: "Optima";
+    font-size: medium;
+}
+
+h2, h3, a {
+    font-family: "Optima";
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: "Optima";
+    font-style: none;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+progress {
+    width: 400px;
+    padding-top: 25px;
+
+}
+
+label {
+    font-weight: 700;
+}
+
+.page{
+    height: inherit;
+    max-width: 1000px;
+    margin: -100 auto;
+    padding: 40px 20px;
+}
+
+.sections {
+    
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+}
+
+.leftsection{
+    flex: 1;
+    height: inherit;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 350px;
+    border-right: 10px;
+    border-color: black;
+}
+
+.rightsection{
+    flex: auto;
+    height: inherit;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 550px;
+}
+
+.divider {
+    height: 100vh;
+    width: 1px;
+    background-color: lightgray;
+  }
+
+
+.student * {
+    display: flex;
+    justify-content: center;
+}
+  
+.ALLul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.ALLli{
+    list-style-type: none;
+    display: inline-block;
+    width: 500px;
+}
+  
+.item {
+    display: flex;
+    margin: -10px;
+}
+  
+.dashed {
+    list-style-type: none;
+}
+
+.dashed > li {
+    text-indent: -40px;
+    font-family: "Optima";
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.dashed > li::before {
+    content: "-";
+    text-indent: -5px;
+    margin-right: 5px;
+}
+
+.left, .right {
+    box-sizing: border-box;
+    padding: 10px;
+}
+  
+.left { 
+    flex: 1; 
+}
+  
+.right * {
+    text-align: right;
+    width: 120px;
+    height: 100px;
+    margin: auto;  
+}
+
+.left .thicc {
+    font-family: "Optima";
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+  
+.thin {
+    font-family: "Optima";
+    font-size: medium;
+    margin: auto;
+}
+
+.cred {
+    font-family: "Optima";
+    color: gray;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background-color: whitesmoke;
+    color: #ccc;
+    text-align: center;
+    border-top: 1px;
+    border-color: rgb(217, 217, 217);
+    font-family: "Optima";
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .sections { flex-direction: column; } 
+    .divider { display: none;}
+    .rightsection {justify-content: center;}
+}
