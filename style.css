@@ -30,7 +30,7 @@ nav li a {
     font-family: "Optima";
     font-weight: 100;
     font-size: larger;
-    position: fixed;
+    position: relative;
 }
 
 .hover:hover {
